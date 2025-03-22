@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Test Mobile Banner" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="favicon.ico" />
+  <title>Test Mobile Banner - Julia Popova</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<main id="banner" class="banner">
+  <a class="banner__cross" href="#">
+    <img src="assets/images/icons/cross.svg" alt="cross" />
+  </a>
+  <h1 class="banner__title" data-i18n="Get Unlimited <br>Access"></h1>
+  <section class="banner__features">
+    <div class="features">
+      <div class="features__item features__item--unlimited">
+        <span class="features__title" data-i18n="Unlimited Art <br>Creation"></span>
+      </div>
+      <div class="features__item features__item--exclusive">
+        <span class="features__title" data-i18n="Exclusive <br>Styles"></span>
+      </div>
+      <div class="features__item features__item--magic">
+        <span class="features__title" data-i18n="Magic Avatars <br>With 20% Off"></span>
+      </div>
+    </div>
+  </section>
+  <div class="banner__subscriptions">
+    <div class="subscription subscription--best" data-link="https://apple.com/">
+      <div class="subscription__best-offer" data-i18n="BEST OFFER"></div>
+      <div class="subscription__yearly">
+        <span class="subscription__title" data-i18n="YEARLY ACCESS"></span>
+        <p class="subscription__subtitle" data-i18n="Just {{price}} per year" data-price="$39.99"></p>
+      </div>
+      <p class="subscription__price" data-i18n="{{price}} <br>per week" data-price="$0.48"></p>
+    </div>
+    <div class="subscription" data-link="https://google.com/">
+      <span class="subscription__title" data-i18n="WEEKLY ACCESS"></span>
+      <p class="subscription__price" data-i18n="{{price}} <br>per week" data-price="$6.99"></p>
+    </div>
+  </div>
+  <button class="banner__continue" data-i18n="Continue"></button>
+  <footer class="banner__footer">
+    <a href="#" class="footer__link" data-i18n="Terms of Use"></a>
+    <a href="#" class="footer__link" data-i18n="Privacy Policy"></a>
+    <a href="#" class="footer__link" data-i18n="Restore"></a>
+  </footer>
+</main>
+
+<script type="module" src="js/script.js"></script>
+</body>
+</html>

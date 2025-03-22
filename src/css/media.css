@@ -1,0 +1,38 @@
+@media (max-width: 389px) {
+    .banner__cross {
+        top: 37px;
+    }
+}
+
+@media (max-width: 414px) {
+    .banner__continue {
+        height: 48px;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0.5rem auto;
+    }
+
+    .banner__footer {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 415px) {
+       .banner__footer {
+        margin-top: 2rem;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .features__item--unlimited {
+        background-image: url('../assets/images/webp/Unlimited-BG-2x.webp');
+    }
+
+    .features__item--exclusive {
+        background-image: url('../assets/images/webp/Exclusive-BG-2x.webp');
+    }
+
+    .features__item--magic {
+        background-image: url('../assets/images/webp/Magic-BG-2x.webp');
+    }
+}

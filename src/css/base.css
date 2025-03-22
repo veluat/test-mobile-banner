@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../assets/images/webp/Body-BG-2x.webp');
+    background-image: -webkit-image-set(
+            url('../assets/images/webp/Body-BG-2x.webp') 1x,
+            url('../assets/images/fallback/Body-BG-2x.png') 2x
+    );
+    min-width: 375px;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: inherit;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    all: unset;
+}
+
