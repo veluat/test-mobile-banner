@@ -2,58 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Test Mobile Banner"/>
+  <meta name="description" content="Julia Popova — Frontend Developer. Test Mobile Banner"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <link rel="icon" href="/favicon.ico"/>
-  <title>Test Mobile Banner - Julia Popova</title>
+  <title>Julia Popova - Test Mobile Banner</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-<main id="banner" class="banner">
-  <a class="banner__cross" href="#">
-    <img src="assets/images/icons/cross.svg" alt="cross"/>
-  </a>
-  <h1 class="banner__title" data-i18n="Get Unlimited <br>Access"></h1>
-  <section class="banner__features">
-    <div class="features">
-      <div class="features__item features__item--unlimited">
-        <span class="features__title" data-i18n="Unlimited Art <br>Creation"></span>
+<div class="promo-banner__header">
+  <header>
+    <a class="promo-banner__close-button" href="#" aria-label="Close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12.0105 11.5997L17.4165 6.19368L17.8144 6.59155L12.4084 11.9975L18 17.5892L17.5892 18L11.9975 12.4084L6.59155 17.8144L6.19368 17.4165L11.5997 12.0105L6 6.41085L6.41085 6L12.0105 11.5997Z"
+              stroke="white" stroke-opacity="0.4" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </header>
+</div>
+
+<div class="promo-banner__main">
+  <main>
+    <h1 class="promo-banner__title" data-i18n="Get Unlimited <br>Access"></h1>
+
+    <div class="benefits">
+      <div class="benefits__item">
+        <picture>
+          <source
+              srcset="assets/images/webp/Unlimited-BG-2x.webp 2x"
+              type="image/webp"
+          >
+          <img
+              src="assets/images/fallback/Unlimited-BG-2x.png"
+              srcset="assets/images/fallback/Unlimited-BG-2x.png 2x"
+              alt="Unlimited Art Creation"
+          >
+        </picture>
+        <p class="benefits__title" data-i18n="Unlimited Art <br>Creation"></p>
       </div>
-      <div class="features__item features__item--exclusive">
-        <span class="features__title" data-i18n="Exclusive <br>Styles"></span>
+      <div class="benefits__item">
+        <picture>
+          <source
+              srcset="assets/images/webp/Exclusive-BG-2x.webp 2x"
+              type="image/webp"
+          >
+          <img
+              src="assets/images/fallback/Exclusive-BG-2x.png"
+              srcset="assets/images/fallback/Exclusive-BG-2x.png 2x"
+              alt="Exclusive Styles"
+          >
+        </picture>
+        <p class="benefits__title" data-i18n="Exclusive <br>Styles"></p>
       </div>
-      <div class="features__item features__item--magic">
-        <span class="features__title" data-i18n="Magic Avatars <br>With 20% Off"></span>
+      <div class="benefits__item">
+        <picture>
+          <source
+              srcset="assets/images/webp/Magic-BG-2x.webp 2x"
+              type="image/webp"
+          >
+          <img
+              src="assets/images/fallback/Magic-BG-2x.png"
+              srcset="assets/images/fallback/Magic-BG-2x.png 2x"
+              alt="Magic Avatars With 20% Off"
+          >
+        </picture>
+        <p class="benefits__title" data-i18n="Magic Avatars <br>With 20% Off"></p>
       </div>
     </div>
-  </section>
-  <div class="banner__subscriptions">
-    <div class="subscription subscription--best" data-link="https://apple.com/">
-      <div class="subscription__best-offer" data-i18n="BEST OFFER"></div>
-      <div class="subscription__yearly">
-        <span class="subscription__title" data-i18n="YEARLY ACCESS"></span>
-        <p class="subscription__subtitle" data-i18n="Just {{price}} per year" data-price="$39.99"></p>
+
+    <div class="promo-banner__subscriptions">
+      <div class="subscription subscription--highlighted" data-link="https://apple.com/">
+        <div class="subscription__badge" data-i18n="BEST OFFER"></div>
+        <div class="subscription__yearly">
+          <div class="subscription__title" data-i18n="YEARLY ACCESS"></div>
+          <div class="subscription__subtitle" data-i18n="Just {{price}} per year" data-price="$39.99"></div>
+        </div>
+        <div class="subscription__price" data-i18n="{{price}} <br>per week" data-price="$0.48"></div>
       </div>
-      <p class="subscription__price" data-i18n="{{price}} <br>per week" data-price="$0.48"></p>
+      <div class="subscription" data-link="https://google.com/">
+        <div class="subscription__title" data-i18n="WEEKLY ACCESS"></div>
+        <div class="subscription__price" data-i18n="{{price}} <br>per week" data-price="$6.99"></div>
+      </div>
     </div>
-    <div class="subscription" data-link="https://google.com/">
-      <span class="subscription__title" data-i18n="WEEKLY ACCESS"></span>
-      <p class="subscription__price" data-i18n="{{price}} <br>per week" data-price="$6.99"></p>
-    </div>
-  </div>
-  <button class="banner__continue" data-i18n="Continue"></button>
-  <footer class="banner__footer">
-    <a href="#" class="footer__link" data-i18n="Terms of Use"></a>
-    <a href="#" class="footer__link" data-i18n="Privacy Policy"></a>
-    <a href="#" class="footer__link" data-i18n="Restore"></a>
-  </footer>
-</main>
+    <a href="#" class="promo-banner__continue" role="button" data-i18n="Continue"></a>
+
+    <footer class="promo-banner__footer">
+      <a href="#" class="promo-banner__footer-link" data-i18n="Terms of Use"></a>
+      <a href="#" class="promo-banner__footer-link" data-i18n="Privacy Policy"></a>
+      <a href="#" class="promo-banner__footer-link" data-i18n="Restore"></a>
+    </footer>
+  </main>
+</div>
 
 <script type="module" src="js/script.js"></script>
 </body>
