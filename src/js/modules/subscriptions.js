@@ -10,6 +10,11 @@ export function setDefaultSubscription() {
   }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  setDefaultSubscription()
+  setupSubscriptionListeners()
+})
+
 export function setupSubscriptionListeners() {
   const subscriptionItems = document.querySelectorAll(SELECTORS.SUBSCRIPTION)
   const continueButton = document.querySelector(SELECTORS.CONTINUE_BUTTON)
