@@ -25,3 +25,11 @@ export function determineLanguage() {
   const userLang = langParam || navigator.language.slice(0, 2)
   return LANGUAGES.SUPPORTED.includes(userLang) ? userLang : LANGUAGES.DEFAULT
 }
+
+function getParameterByName(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
+
+const lang = getParameterByName('lang') || 'en';
+document.documentElement.lang = lang;
