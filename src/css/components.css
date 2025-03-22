@@ -67,7 +67,8 @@
 /* Элемент: footer */
 .promo-banner__footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 52px;
 }
 
 /* Элемент: footer-link */
@@ -79,6 +80,12 @@
     color: var(--color-light);
     opacity: 0.3016;
     text-decoration: underline;
+    white-space: nowrap;
+}
+
+.promo-banner__title, .benefits__title {
+    white-space: normal;
+    word-break: break-word;
 }
 
 /* ==================== */

@@ -1,58 +1,52 @@
-/* ==================== */
 /* Медиа-запросы для iPhone SE и iPhone 8+ */
-/* ==================== */
 @media (max-width: 414px) {
-    /* Основной контент */
     .main {
         padding-bottom: 8px;
     }
 
-    /* Блок benefits */
     .benefits {
         padding-bottom: 26px;
         gap: 4px;
     }
 
-    /* Элемент benefits__title */
     .benefits__title {
         left: 9px;
     }
 
-    /* Элемент promo-banner__title */
     .promo-banner__title {
         padding-bottom: 16px;
     }
 
-    /* Элемент promo-banner__continue */
     .promo-banner__continue {
         margin: 8px auto 28px;
     }
 
-    /* Элемент promo-banner__close-button */
     .promo-banner__close-button {
         top: 37px;
     }
+
+    .promo-banner__footer {
+        gap: 26px;
+    }
 }
 
-/* ==================== */
 /* Стили для языков */
-/* ==================== */
-
-/* Немецкий язык (de) */
-[lang="de"] .promo-banner__main .promo-banner__footer {
-    justify-content: center;
-    gap: 5px;
-    width: 100%;
-    margin: 0;
-}
-
-[lang="de"] .promo-banner__footer .promo-banner__footer-link {
-    font-size: 9px;
+[lang="de"] .promo-banner__footer .promo-banner__footer-link,
+[lang="fr"] .promo-banner__footer .promo-banner__footer-link {
+    font-size: 11px;
 }
 
 [lang="de"] .promo-banner__footer .subscription__title,
-[lang="de"] .promo-banner__footer .subscription__price {
-    font-size: 13px;
+[lang="de"] .promo-banner__footer .subscription__price,
+[lang="fr"] .promo-banner__footer .subscription__title,
+[lang="fr"] .promo-banner__footer .subscription__price {
+    font-size: 15px;
+}
+
+[lang="fr"] .promo-banner__title,
+[lang="pt"] .promo-banner__title {
+    font-size: 30px;
+    line-height: 34px;
 }
 
 [lang="de"] .promo-banner__title {
@@ -61,32 +55,7 @@
     padding-bottom: 30px;
 }
 
-/* Французский язык (fr) */
-[lang="fr"] .promo-banner__footer .promo-banner__footer-link {
-    font-size: 9px;
-}
 
-[lang="fr"] .promo-banner__footer .subscription__title,
-[lang="fr"] .promo-banner__footer .subscription__price {
-    font-size: 14px;
-}
 
-[lang="fr"] .promo-banner__title {
-    font-size: 30px;
-    line-height: 34px;
-}
 
-/* Испанский язык (es) */
-[lang="es"] .promo-banner__footer .promo-banner__footer-link {
-    font-size: 11px;
-}
 
-/* Португальский язык (pt) */
-[lang="pt"] .promo-banner__footer .promo-banner__footer-link {
-    font-size: 11px;
-}
-
-[lang="pt"] .promo-banner__title {
-    font-size: 30px;
-    line-height: 34px;
-}
