@@ -19,24 +19,24 @@
 
 2. Запустите проект:
     ```bash
-   pnpm install
+   pnpm run dev
    ```
 
 ## Ссылки
-Кнопка "Continue" и ячейки панели ведут на внешние ресурсы:
+Можно выбрать одно из предложений подписки **YEARLY ACCESS** или **WEEKLY ACCESS**, а кнопка **Continue** ведёт на внешние ресурсы:
 
-:iphone: https://apple.com/
+**YEARLY ACCESS** --> :iphone: https://apple.com/
 
-:globe_with_meridians: https://google.com/
+**WEEKLY ACCESS** --> :globe_with_meridians: https://google.com/
 
 ## Языки
 **Поддерживаются 6 языков:**
-- en (англиский)
+- de (англиский)
 - es (испанский)
 - de (немецкий)
 - fr (французский)
 - pt (португальский)
-
+- ja (японский)
 
 Если язык системы не поддерживается, по умолчанию используется английский.
 
