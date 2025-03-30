@@ -1,4 +1,4 @@
-import {SELECTORS} from './constants'
+import {SELECTORS} from './constants.js'
 
 export function setDefaultSubscription() {
   const defaultSubscription = document.querySelector(SELECTORS.DEFAULT_SUBSCRIPTION)

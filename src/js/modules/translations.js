@@ -1,4 +1,4 @@
-import {LANGUAGES, SELECTORS} from './constants'
+import {LANGUAGES, SELECTORS} from './constants.js'
 import en from './../../i18n/en.json'
 import de from './../../i18n/de.json'
 import ja from './../../i18n/ja.json'
