@@ -27,6 +27,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    color: var(--color-light);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,10 +36,9 @@ body {
             url('../assets/images/webp/bg@2x.webp') 2x,
             url('../assets/images/webp/bg@3x.webp') 3x
     );
-    color: var(--color-light);
-    height: 100svh;
     display: flex;
     flex-direction: column;
+    height: 100svh;
     width: 100%;
     max-width: 390px;
     margin: 0 auto;
