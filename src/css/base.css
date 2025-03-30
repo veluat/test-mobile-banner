@@ -31,10 +31,10 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./../assets/images/fallback/bg@3x.jpg');
+    background-image: url('../assets/images/fallback/bg@3x.jpg');
     background-image: -webkit-image-set(
-            url('./../assets/images/webp/bg@2x.webp') 2x,
-            url('./../assets/images/webp/bg@3x.webp') 3x
+            url('../assets/images/webp/bg@2x.webp') 2x,
+            url('../assets/images/webp/bg@3x.webp') 3x
     );
     display: flex;
     flex-direction: column;
