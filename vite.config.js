@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite'
-
 import { resolve } from 'path';
 
 export default defineConfig({
@@ -8,10 +7,14 @@ export default defineConfig({
   build: {
     outDir: '../dist',
     emptyOutDir: true,
+    assetsInlineLimit: 0, 
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
       },
+      output: {
+        assetFileNames: 'assets/[name].[hash][extname]'
+      }
     },
   },
   server: {
