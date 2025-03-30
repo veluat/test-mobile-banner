@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Julia Popova — Frontend Developer. Test Mobile Banner"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <link rel="icon" href="/favicon.ico"/>
   <title>Julia Popova - Test Mobile Banner</title>
@@ -33,13 +33,14 @@
       <div class="benefits__item">
         <picture>
           <source
-              srcset="assets/images/webp/Unlimited-BG-2x.webp 2x"
+              srcset="assets/images/webp/unlimited@2x.webp 2x,
+                      assets/images/webp/unlimited@3x.webp 3x"
               type="image/webp"
           >
           <img
-              src="assets/images/fallback/Unlimited-BG-2x.png"
-              srcset="assets/images/fallback/Unlimited-BG-2x.png 2x"
+              src="assets/images/fallback/unlimited@3x.jpg"
               alt="Unlimited Art Creation"
+              loading="lazy"
           >
         </picture>
         <p class="benefits__title" data-i18n="Unlimited Art <br>Creation"></p>
@@ -47,13 +48,14 @@
       <div class="benefits__item">
         <picture>
           <source
-              srcset="assets/images/webp/Exclusive-BG-2x.webp 2x"
+              srcset="assets/images/webp/exclusive@2x.webp 2x,
+                      assets/images/webp/exclusive@3x.webp 3x"
               type="image/webp"
           >
           <img
-              src="assets/images/fallback/Exclusive-BG-2x.png"
-              srcset="assets/images/fallback/Exclusive-BG-2x.png 2x"
-              alt="Exclusive Styles"
+              src="assets/images/fallback/exclusive@3x.jpg"
+              alt="Unlimited Art Creation"
+              loading="lazy"
           >
         </picture>
         <p class="benefits__title" data-i18n="Exclusive <br>Styles"></p>
@@ -61,13 +63,14 @@
       <div class="benefits__item">
         <picture>
           <source
-              srcset="assets/images/webp/Magic-BG-2x.webp 2x"
+              srcset="assets/images/webp/magic@2x.webp 2x,
+                      assets/images/webp/magic@3x.webp 3x"
               type="image/webp"
           >
           <img
-              src="assets/images/fallback/Magic-BG-2x.png"
-              srcset="assets/images/fallback/Magic-BG-2x.png 2x"
-              alt="Magic Avatars With 20% Off"
+              src="assets/images/fallback/magic@3x.jpg"
+              alt="Unlimited Art Creation"
+              loading="lazy"
           >
         </picture>
         <p class="benefits__title" data-i18n="Magic Avatars <br>With 20% Off"></p>
@@ -78,14 +81,14 @@
       <div class="subscription subscription--highlighted" data-link="https://apple.com/">
         <div class="subscription__badge" data-i18n="BEST OFFER"></div>
         <div class="subscription__yearly">
-          <div class="subscription__title" data-i18n="YEARLY ACCESS"></div>
-          <div class="subscription__subtitle" data-i18n="Just {{price}} per year" data-price="$39.99"></div>
+          <p class="subscription__title" data-i18n="YEARLY ACCESS"></p>
+          <p class="subscription__subtitle" data-i18n="Just {{price}} per year" data-price="$39.99"></p>
         </div>
-        <div class="subscription__price" data-i18n="{{price}} <br>per week" data-price="$0.48"></div>
+        <p class="subscription__price" data-i18n="{{price}} <br>per week" data-price="$0.48"></p>
       </div>
       <div class="subscription" data-link="https://google.com/">
-        <div class="subscription__title" data-i18n="WEEKLY ACCESS"></div>
-        <div class="subscription__price" data-i18n="{{price}} <br>per week" data-price="$6.99"></div>
+        <p class="subscription__title" data-i18n="WEEKLY ACCESS"></p>
+        <p class="subscription__price" data-i18n="{{price}} <br>per week" data-price="$6.99"></p>
       </div>
     </div>
     <a href="#" class="promo-banner__continue" role="button" data-i18n="Continue"></a>
