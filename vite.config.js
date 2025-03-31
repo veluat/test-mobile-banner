@@ -12,14 +12,10 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'src/index.html'),
       },
-      output: {
-        assetFileNames: 'assets/[name][extname]',
-        entryFileNames: 'js/[name].js'
-      }
-    }
+    },
   },
   server: {
     port: 3000,
-    open: true
-  }
+    open: true,
+  },
 });
