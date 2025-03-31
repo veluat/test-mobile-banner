@@ -145,7 +145,7 @@
 @media (width: 414px) and (height: 736px) and (-webkit-device-pixel-ratio: 3) {
 
     body {
-        background-image: url(../assets/images/fallback/test-bg3x.jpg);
+        background-image: url(../assets/test-bg3x.jpg);
     }
 
     .main {
@@ -238,7 +238,7 @@
 /* 4. iPhone SE (2nd gen) */
 @media (width: 375px) and (height: 667px) and (-webkit-device-pixel-ratio: 2) {
     body {
-        background-image: url(../assets/images/fallback/test-bg3x.jpg);
+        background-image: url(../assets/test-bg3x.jpg);
     }
 
     .promo-banner__main {
