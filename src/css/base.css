@@ -32,10 +32,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../assets/images/fallback/bg3x.jpg');
-    background-image: -webkit-image-set(
-            url('../assets/images/webp/bg2x.webp') 2x,
-            url('../assets/images/webp/bg3x.webp') 3x
-    );
     display: flex;
     flex-direction: column;
     height: 100svh;
